@@ -1,0 +1,25 @@
+{
+  "name": "@tiny-write/editor",
+  "version": "0.0.1",
+  "description": "The editor core for Tiny Write",
+  "type": "module",
+  "keywords": [
+    "Utilities"
+  ],
+  "license": "MIT",
+  "author": "Kexing",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development && tsup --watch",
+    "build": "cross-env NODE_ENV=production && tsup"
+  }
+}
