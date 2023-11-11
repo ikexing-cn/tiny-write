@@ -7,5 +7,5 @@ export default defineConfig({
   splitting: false,
   format: ['esm'],
   entry: ['src/**'],
-  minify: process.env.NODE_ENV === 'production'
+  minify: process.env.NODE_ENV === 'production',
 })
